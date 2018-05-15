@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.giso.tadm_game.MainActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imagen"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:id="@+id/layoutBaja"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/asteroid"
+            android:id="@+id/asteroid"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/spaceWar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/asteroid"
+            android:layout_marginTop="37dp"
+            android:fontFamily="@font/bungee_shade"
+            android:lineSpacingExtra="10sp"
+            android:textColor="#4ee960"
+            android:text="Space War"
+            android:textAlignment="center"
+            android:textSize="46sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/materia"
+            android:layout_alignParentStart="true"
+            android:fontFamily="@font/audiowide"
+            android:text="Gabriela Itzamar Soto Orozco"
+            android:textAlignment="center"
+            android:textColor="#55c7ab"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/materia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/press"
+            android:layout_alignParentStart="true"
+            android:fontFamily="@font/audiowide"
+            android:text="Una app para la materia: Taller aplicaciones móviles"
+            android:textAlignment="center"
+            android:textColor="#6fb4ff"
+            android:textSize="15dp"
+            android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/press"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="5dp"
+            android:text="Toca la pantalla"
+            android:textAlignment="center"
+            android:textColor="#dbb5ea"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/layoutSube">
+    </LinearLayout>
+    -->
+
+</RelativeLayout>
